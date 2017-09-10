@@ -26,8 +26,11 @@ import java.util.List;
 public class BoardDefaults {
     private static final String DEVICE_EDISON_ARDUINO = "edison_arduino";
     private static final String DEVICE_EDISON = "edison";
+    private static final String DEVICE_JOULE = "joule";
     private static final String DEVICE_RPI3 = "rpi3";
-    private static final String DEVICE_NXP = "imx6ul";
+    private static final String DEVICE_IMX6UL_PICO = "imx6ul_pico";
+    private static final String DEVICE_IMX6UL_VVDN = "imx6ul_iopb";
+    private static final String DEVICE_IMX7D_PICO = "imx7d_pico";
     private static String sBoardVariant = "";
 
     public static String getPwmPin() {
@@ -36,10 +39,16 @@ public class BoardDefaults {
                 return "IO3";
             case DEVICE_EDISON:
                 return "GP13";
+            case DEVICE_JOULE:
+                return "PWM_0";
             case DEVICE_RPI3:
                 return "PWM1";
-            case DEVICE_NXP:
-                return "PWM7";
+            case DEVICE_IMX6UL_PICO:
+                return "PWM8";
+            case DEVICE_IMX6UL_VVDN:
+                return "PWM3";
+            case DEVICE_IMX7D_PICO:
+                return "PWM2";
             default:
                 throw new UnsupportedOperationException("Unknown device: " + Build.DEVICE);
         }

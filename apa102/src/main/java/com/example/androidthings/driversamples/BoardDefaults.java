@@ -21,8 +21,11 @@ import android.os.Build;
 @SuppressWarnings("WeakerAccess")
 public class BoardDefaults {
     private static final String DEVICE_EDISON = "edison";
+    private static final String DEVICE_JOULE = "joule";
     private static final String DEVICE_RPI3 = "rpi3";
-    private static final String DEVICE_NXP = "imx6ul";
+    private static final String DEVICE_IMX6UL_PICO = "imx6ul_pico";
+    private static final String DEVICE_IMX6UL_VVDN = "imx6ul_iopb";
+    private static final String DEVICE_IMX7D_PICO = "imx7d_pico";
     /**
      * Return the preferred I2C port for each board.
      */
@@ -31,10 +34,16 @@ public class BoardDefaults {
             // same for Edison Arduino breakout and Edison SOM
             case DEVICE_EDISON:
                 return "SPI2";
+            case DEVICE_JOULE:
+                return "SPI0.0";
             case DEVICE_RPI3:
                 return "SPI0.0";
-            case DEVICE_NXP:
-                return "SPI3_0";
+            case DEVICE_IMX6UL_PICO:
+                return "SPI3.0";
+            case DEVICE_IMX6UL_VVDN:
+                return "SPI1.0";
+            case DEVICE_IMX7D_PICO:
+                return "SPI3.1";
             default:
                 throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
         }

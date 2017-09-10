@@ -26,8 +26,11 @@ import java.util.List;
 public class BoardDefaults {
     private static final String DEVICE_EDISON_ARDUINO = "edison_arduino";
     private static final String DEVICE_EDISON = "edison";
+    private static final String DEVICE_JOULE = "joule";
     private static final String DEVICE_RPI3 = "rpi3";
-    private static final String DEVICE_NXP = "imx6ul";
+    private static final String DEVICE_IMX6UL_PICO = "imx6ul_pico";
+    private static final String DEVICE_IMX6UL_VVDN = "imx6ul_iopb";
+    private static final String DEVICE_IMX7D_PICO = "imx7d_pico";
     private static String sBoardVariant = "";
 
     /**
@@ -40,10 +43,16 @@ public class BoardDefaults {
                 return "IO7";
             case DEVICE_EDISON:
                 return "GP45";
+            case DEVICE_JOULE:
+                return "FLASH_TRIGGER";
             case DEVICE_RPI3:
                 return "BCM20";
-            case DEVICE_NXP:
-                return "GPIO4_IO20";
+            case DEVICE_IMX6UL_PICO:
+                return "GPIO2_IO03";
+            case DEVICE_IMX6UL_VVDN:
+                return "GPIO3_IO01";
+            case DEVICE_IMX7D_PICO:
+                return "GPIO_174";
             default:
                 throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
         }
@@ -58,10 +67,16 @@ public class BoardDefaults {
                 return "IO6";
             case DEVICE_EDISON:
                 return "GP44";
+            case DEVICE_JOULE:
+                return "FLASH_TORCH";
             case DEVICE_RPI3:
                 return "BCM21";
-            case DEVICE_NXP:
-                return "GPIO4_IO21";
+            case DEVICE_IMX6UL_PICO:
+                return "GPIO4_IO22";
+            case DEVICE_IMX6UL_VVDN:
+                return "GPIO3_IO06";
+            case DEVICE_IMX7D_PICO:
+                return "GPIO_34";
             default:
                 throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
         }
