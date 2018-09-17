@@ -5,6 +5,13 @@ This Android Things sample demonstrates how to interface with a basic
 RGB led strip using the APA102 over SPI protocol.
 
 
+Screenshots
+-----------
+
+![RGB LED strip sample demo][demo-gif]
+
+[(Watch the demo on YouTube)][demo-yt]
+
 Pre-requisites
 --------------
 
@@ -19,7 +26,6 @@ Schematics
 
 If you have the Raspberry Pi [Rainbow Hat for Android Things](https://shop.pimoroni.com/products/rainbow-hat-for-android-things), just plug it onto your Raspberry Pi 3.
 
-![Schematics for Intel Edison](edison_schematics.png)
 ![Schematics for Raspberry Pi 3](rpi3_schematics.png)
 
 The 5v and GND from the Edison and Raspberry Pi 3 are sufficient for driving a few LEDs,
@@ -62,8 +68,11 @@ the License at
 
   http://www.apache.org/licenses/LICENSE-2.0
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-  License for the specific language governing permissions and limitations under
-  the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+License for the specific language governing permissions and limitations under
+the License.
+
+[demo-yt]: https://www.youtube.com/watch?v=HGhk9xm7qig&index=15&list=PLWz5rJ2EKKc-GjpNkFe9q3DhE2voJscDT
+[demo-gif]: https://storage.googleapis.com/android-things/samples-gifs/apa102.gif

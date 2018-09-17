@@ -1,18 +1,16 @@
-Android Things driver samples
-=============================
+# Peripheral Driver Samples
 
-Samples for Android Things peripheral drivers.
+Samples for Android Things peripheral drivers located in the
+[contrib-drivers repository](https://github.com/androidthings/contrib-drivers).
 
-Build and install
-=================
+## Build and install
 
 Open the project in Android Studio, select the "Run Configuration" for the
 sample you want to run and click the "Run" button.
 
 See each sample subdirectory `README.md` for more instructions.
 
-License
--------
+## License
 
 Copyright 2016 Google Inc.
 
